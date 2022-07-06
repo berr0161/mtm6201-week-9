@@ -1,0 +1,64 @@
+body {
+    background-color: bisque;
+}
+
+.dice circle {
+    fill: #F57C00;
+    transition: all 2s;
+    transform-origin: 25px 25px;
+}
+
+.dice:hover circle {
+    transform: scale(1.1);
+}
+
+.dice5 g {
+    transition: all 2s;
+    transform-origin: 100px 100px;
+}
+
+.dice5:hover g {
+    transform: scale(1.2);
+}
+
+.patterntext {
+    font-size: 4rem;
+}
+
+.cls-1 {
+    fill: #ffe269;
+}
+
+.cls-2 {
+    fill: #fff;
+}
+
+.cls-3 {
+    fill: #fcf0c0;
+}
+
+.smily-wrap {
+    max-width: 300px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(10px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.pupil{
+    animation: move 2s infinite;
+}
+
+.smily-wrap:hover .pupil{
+    animation-play-state:paused;
+}
